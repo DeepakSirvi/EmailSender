@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "dc5fb907-b7c4-4cb7-a424-4364e0adee36",
+		"name": "Email Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27723325"
+	},
+	"item": [
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"deepaksirvi45@gmail.com\",\r\n    \"subject\":\"Test simple email\",\r\n    \"otp\":\"999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/email/send",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"email",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send email multiple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"deepaksirvi45@gmail.com\",\r\n    \"subject\":\"Test simple email\",\r\n    \"otp\":\"999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/email/send",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"email",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send email multiple file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"deepaksirvi45@gmail.com\",\r\n    \"subject\":\"Test simple email\",\r\n    \"otp\":\"999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/email/send",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"email",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send email multiple html",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":[\r\n        \"deepaksirvi45@gmail.com\"\r\n        ,\"dc784488@gmail.com\"\r\n    ],\r\n    \"subject\":\"Test simple email\",\r\n    \"otp\":\"999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/email/sendWithHtmlBasic",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"email",
+						"sendWithHtmlBasic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send email multiple html thymeleaf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":[\r\n        \"deepaksirvi45@gmail.com\"\r\n        ,\"dc784488@gmail.com\"\r\n    ],\r\n    \"subject\":\"Test simple email\",\r\n    \"otp\":\"999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/email/sendWithHtmlBasic",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"email",
+						"sendWithHtmlBasic"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

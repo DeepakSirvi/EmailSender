@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIG Login Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .verify_img {
+            max-width: 20%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .login_otp {
+            border: 2px dashed #1d3577;
+            border-radius: 50px;
+            padding: 6px 0px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            width: 70%;
+            max-width: 300px;
+            margin: 0 auto 24px;
+            color: #1d3577;
+        }
+
+        .subtitle {
+            color: #7A7A7A;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .email_btn {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 36px;
+            border-radius: 36px;
+            background-color: #2B417D;
+            border: none;
+            display: block;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
+
+        .app_details {
+            background-color: #EDEFF5;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .social_media_text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .social_media_btn {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 16px 32px;
+            border-radius: 50px;
+            background-color: #000;
+            border: none;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .social_media_btn h2 {
+            font-size: 12px;
+            color: #7A7A7A;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+
+        .social_media_btn h3 {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+
+        .social_media_btn_group {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 12px;
+            justify-content: space-between;
+        }
+
+        .social_media_btn_group button {
+            margin-right: 10px;
+        }
+
+        .social_media_btn_group button:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <div class="email_templates">
+            <div class="email_content">
+                <div class="logo">
+                    <img src="https://res.cloudinary.com/dhgy9as8a/image/upload/v1715927544/logo_qfhd5s.png">
+                </div>
+                <h1 class="title">Login Verification</h1>
+                <img src="https://res.cloudinary.com/dhgy9as8a/image/upload/v1715927545/verify_ohtmnf.png" class="verify_img">
+                <div class="login_otp" th:text="${message}"></div>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, omnis. Blanditiis possimus tempora provident vel, laboriosam nostrum minima alias hic reprehenderit.</p>
+                <button class="email_btn">Activate Your Account</button>
+            </div>
+            <div class="app_details">
+                <h2 class="social_media_text">Download the app now!</h2>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, omnis. Blanditiis possimus tempora provident vel, laboriosam nostrum minima alias hic reprehenderit.</p>
+                <div class="d-flex flex-column">
+                    <div class="social_media_btn_group">
+                        <button class="social_media_btn">
+                            <img src="https://res.cloudinary.com/dhgy9as8a/image/upload/v1715927545/playstore_zaoqnd.png" height="24px" width="24px">
+                            <div>
+                                <h2>GET IT ON</h2>
+                                <h3>Google Play</h3>
+                            </div>
+                        </button>
+                        <button class="social_media_btn">
+                            <img src="https://res.cloudinary.com/dhgy9as8a/image/upload/v1715927545/mac_pgfnhv.png" height="24px" width="24px">
+                            <div>
+                                <h2>Download on the</h2>
+                                <h3>App Store</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
